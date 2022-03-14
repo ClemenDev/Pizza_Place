@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!--HALLOWEEN WEBSITE-CA2-WEB DESIGN MODULE-HDSODEV-NCI 2020- AUTHOR: JOSE LUIS CLEMENTE ESPADA-->
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Jamie's Pizza_Order Page</title>
+		<link rel= "stylesheet" href="style.css">
+		<script defer src="external.js"></script>
+	</head>
+	
+	<body id="body">
+	
+		<div id="header">
+			<h1 id= "h1"><b>Jamie's Pizza - Order Page</b></h1>
+		</div> <!--end of header div-->
+		
+		<form> <!--form content-->
+		
+			<table class="table">
+			
+				<tr>
+					<td class="td"><b>Select the size of your pizza</b></td>
+					<td>
+						<select id="size" name="size"> <!--dropdown menu-->
+							<option value="">Select here</option>
+							<option value="lar" id="lar">Large 5 &euro;</option>
+							<option value="ext" id="ext">Extra-Large 7 &euro;</option>
+							<option value="sup" id="sup">Supersize 17 &euro;</option>
+						</select> <!--end of dropdown menu-->
+					</td>
+				</tr>
+					
+				<tr>
+					<td class="td"><b>Select the number of pizzas</b></td>
+					<td><input id="num" type="number" min= "1" required></td>
+				</tr>
+					
+				<tr>
+					<td class="td"><b>Enter your 10% discount code</b></td>
+					<td><input id="discount" type="text" name="code"></td>
+				</tr>
+					
+				<tr>
+					<td id="button"><button onclick="billCalculation()" type="submit">Click here to submit your order</button></td>
+				</tr>
+					
+				<tr>
+					<td id="button"><button type="reset">Click to reset</button></td>
+				</tr>
+					
+			</table>	
+			
+		</form> <!--end of form content-->
+			
+		<footer id="footer"><b>Jamie's Pizza 2020 &copy - Website created by JC (Dublin-Ireland)</b></footer>
+		
+	</body>
+</html>
